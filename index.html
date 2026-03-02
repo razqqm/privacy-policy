@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>privacy policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 48px;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+        }
+
+        .project-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            text-decoration: none;
+            color: #e0e0e0;
+            background: #141414;
+            transition: background 0.2s;
+        }
+
+        .project-link:hover {
+            background: #1e1e1e;
+        }
+
+        .project-name {
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .project-date {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .arrow {
+            color: #444;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+
+        .project-link:hover .arrow {
+            transform: translateX(4px);
+            color: #888;
+        }
+
+        footer {
+            margin-top: 64px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #444;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 16px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>privacy policy</h1>
+        <p class="subtitle">select a project to view its privacy policy</p>
+
+        <div class="projects">
+            <!-- add new projects here -->
+            <!-- example:
+            <a href="your-app/index.html" class="project-link">
+                <div>
+                    <div class="project-name">your app name</div>
+                    <div class="project-date">updated: march 2026</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            -->
+            <a href="example-app/index.html" class="project-link">
+                <div>
+                    <div class="project-name">example app</div>
+                    <div class="project-date">updated: march 2026</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 razqqm
+        </footer>
+    </div>
+</body>
+</html>
