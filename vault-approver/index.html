@@ -17,12 +17,36 @@
         h1 { font-size: 24px; margin-bottom: 4px; }
         h2 { font-size: 18px; margin-top: 32px; }
         p, li { font-size: 15px; }
+        .back {
+            display: inline-block;
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 24px;
+            transition: color 0.2s;
+        }
+        .back:hover { color: #333; }
         .updated { color: #888; font-size: 14px; margin-bottom: 32px; }
         ul { padding-left: 20px; }
         a { color: #1a73e8; }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #0a0a0a; color: #e0e0e0; }
+            h1 { color: #fff; }
+            h2 { color: #ccc; }
+            p, li { color: #aaa; }
+            .back { color: #666; }
+            .back:hover { color: #ccc; }
+            .updated { color: #666; }
+            a { color: #6ba3e8; }
+            code { color: #ccc; }
+            strong { color: #ddd; }
+        }
     </style>
 </head>
 <body>
+
+<a href="../index.html" class="back">&larr; All policies</a>
 
 <h1>Privacy Policy</h1>
 <p class="updated">Last updated: March 2, 2026</p>
@@ -100,7 +124,7 @@
 
 <h2>11. Contact</h2>
 <p>If you have questions about this Privacy Policy, please contact us at:</p>
-<p><a href="mailto:vault@ilia.ae">vault@ilia.ae</a></p>
+<p><a href="https://gravatar.com/iliarestov">gravatar.com/iliarestov</a></p>
 
 </body>
 </html>
