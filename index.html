@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>privacy policy</title>
+    <title>Privacy Policies</title>
     <style>
         * {
             margin: 0;
@@ -13,129 +13,136 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-            background: #0f0f0f;
+            background: #0a0a0a;
             color: #e0e0e0;
             min-height: 100vh;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 60px 24px;
+            padding: 80px 24px 60px;
         }
 
-        h1 {
-            font-size: 2rem;
-            font-weight: 300;
-            letter-spacing: -0.5px;
-            margin-bottom: 12px;
-            color: #ffffff;
-        }
-
-        .subtitle {
-            font-size: 0.95rem;
-            color: #888;
+        header {
             margin-bottom: 48px;
         }
 
-        .projects {
-            display: flex;
-            flex-direction: column;
-            gap: 1px;
-            background: #1a1a1a;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid #2a2a2a;
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+            margin-bottom: 8px;
         }
 
-        .project-link {
+        .subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .policies {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .policy-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: #141414;
+            border: 1px solid #1e1e1e;
+            border-radius: 12px;
+            padding: 20px 24px;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .policy-card:hover {
+            background: #181818;
+            border-color: #333;
+        }
+
+        .policy-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 24px;
-            text-decoration: none;
-            color: #e0e0e0;
-            background: #141414;
-            transition: background 0.2s;
+            margin-bottom: 8px;
         }
 
-        .project-link:hover {
-            background: #1e1e1e;
-        }
-
-        .project-name {
+        .policy-name {
             font-size: 1.05rem;
             font-weight: 500;
+            color: #fff;
         }
 
-        .project-date {
-            font-size: 0.8rem;
-            color: #666;
-        }
-
-        .arrow {
+        .policy-arrow {
             color: #444;
-            font-size: 1.2rem;
-            transition: transform 0.2s;
+            font-size: 1.1rem;
+            transition: transform 0.2s, color 0.2s;
         }
 
-        .project-link:hover .arrow {
-            transform: translateX(4px);
+        .policy-card:hover .policy-arrow {
+            transform: translateX(3px);
             color: #888;
+        }
+
+        .policy-description {
+            font-size: 0.85rem;
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .policy-meta {
+            font-size: 0.75rem;
+            color: #555;
         }
 
         footer {
             margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid #1a1a1a;
             text-align: center;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #444;
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 40px 16px;
+                padding: 48px 16px 40px;
             }
+
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
+            }
+
+            .policy-card {
+                padding: 16px 18px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>privacy policy</h1>
-        <p class="subtitle">select a project to view its privacy policy</p>
+        <header>
+            <h1>Privacy Policies</h1>
+            <p class="subtitle">Privacy policies for apps published by razqqm</p>
+        </header>
 
-        <div class="projects">
-            <!-- add new projects here -->
-            <!-- example:
-            <a href="your-app/index.html" class="project-link">
-                <div>
-                    <div class="project-name">your app name</div>
-                    <div class="project-date">updated: march 2026</div>
+        <div class="policies">
+            <a href="vault-approver/index.html" class="policy-card">
+                <div class="policy-header">
+                    <span class="policy-name">Vault Approver</span>
+                    <span class="policy-arrow">&rarr;</span>
                 </div>
-                <span class="arrow">→</span>
-            </a>
-            -->
-            <a href="example-app/index.html" class="project-link">
-                <div>
-                    <div class="project-name">example app</div>
-                    <div class="project-date">updated: march 2026</div>
-                </div>
-                <span class="arrow">→</span>
-            </a>
-            <a href="vault-approver/index.html" class="project-link">
-                <div>
-                    <div class="project-name">vault approver</div>
-                    <div class="project-date">updated: march 2026</div>
-                </div>
-                <span class="arrow">→</span>
+                <p class="policy-description">Companion app for self-hosted Vaultwarden/Bitwarden servers. Approve or deny passwordless login requests via push notifications.</p>
+                <div class="policy-meta">Updated: March 2, 2026</div>
             </a>
         </div>
 
-        <footer>
-            &copy; 2026 razqqm
-        </footer>
+        <footer>&copy; 2026 razqqm</footer>
     </div>
 </body>
 </html>
